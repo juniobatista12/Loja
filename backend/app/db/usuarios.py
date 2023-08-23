@@ -19,3 +19,12 @@ class UsuarioDB:
         except Exception as error:
             print(error)
             return False
+
+    def putUsuario(self, values):
+        try:
+            conn = Connection()
+            conn.executeInsert("usuario", values)
+            return True
+        except Exception as error:
+            print(error)
+            return False
