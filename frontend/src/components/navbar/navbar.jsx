@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">Loja</Navbar.Brand>
+        <Navbar.Brand href="/">Loja</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
@@ -18,9 +18,7 @@ export default function NavBar() {
               <NavDropdown.Item href="/cosmeticos">Cosméticos em pronta entrega</NavDropdown.Item>
               <NavDropdown.Item href="/revistas">Revistas para encomendas</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Login" id="collapsible-nav-dropdown" align="end">
-              <NavDropdown.Item>Aqui terá a área de login e cadastro de clientes</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href='/login'>Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
