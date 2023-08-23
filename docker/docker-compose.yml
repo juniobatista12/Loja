@@ -11,7 +11,7 @@ services:
   loja-backend:
     build:
       context: ..
-      dockerfile: backend.Dockerfile
+      dockerfile: docker/backend.Dockerfile
     ports:
       - '8000:8000'
   mysql:
@@ -20,5 +20,3 @@ services:
       - MYSQL_ROOT_PASSWORD=123456
     ports:
       - '3306:3306'
-    volumes:
-      - 'mysqldata:/var/lib/mysql-files/'
